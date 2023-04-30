@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  width: 4rem;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.listitems,
+li {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #5c0909;
+}
+li:last-child {
+  margin-right: 2px;
+}
+a:hover {
+}
+/*------------Card Css-------------*/
+
+.resturent-card {
+  color: #5c0909;
+  padding: 12px;
+}
+.resturent-card:hover {
+  border-radius: 15px;
+  background: linear-gradient(145deg, #fff6f6, #ebd7d7);
+  box-shadow: 1px 1px 10px #cbc4c4, -1px -1px 10px #ffffff;
+  /*
+  border-radius: 15px;
+  background: linear-gradient(145deg, #fff6f6, #d3cbcb);
+  box-shadow: 6px 6px 12px #b4adad, -6px -6px 12px #ffffff;
+  */
+}
+
+h2 {
+  margin: 1px;
+  font-size: 1.02rem;
+}
+
+img {
+  width: 15rem;
+  border-radius: 15px;
+}
+
+.catagory {
+  margin: 0px;
+}
+.area {
+  margin-bottom: -10px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  padding: 0px;
+}
+.card-footer p:first-child {
+  margin-top: 10px;
+}
+
+.rlist {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  height: 2.5rem;
+}
+.search-input {
+  border: none;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  background: linear-gradient(145deg, #fff6f6, #d7cfcf);
+
+  padding: 10px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.search-button {
+  border: none;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  background: linear-gradient(315deg, #6b1313, #e86d6d);
+  width: 6rem;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+.error-container {
+  font-size: 3rem;
+  text-align: center;
+  color: #5c0909;
+  font-weight: bold;
+}
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+.singleprod {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  padding: 0px;
+}
+.Singlecard {
+  width: 15rem;
+  padding: 12px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+
+  gap: 30rem;
+}
+.moretocome,
+h3 {
+  text-align: center;
+  color: #5c0909;
+  font-size: 2rem;
+  font-weight: bold;
+}
